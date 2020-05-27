@@ -1,6 +1,6 @@
 # ZhuPiTe 朱皮特
 
-Unofficial clone of the official RingCentral App.
+An unofficial clone of the official RingCentral App.
 
 
 ## Objectives
