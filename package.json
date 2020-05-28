@@ -1,5 +1,6 @@
 {
   "name": "zhupite",
+  "description": "ZhuPiTe, 朱皮特, an unofficial clone of the official RingCentral App",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -8,6 +9,7 @@
   "devDependencies": {
     "@types/node": "^13.11.1",
     "gts": "^2.0.2",
+    "html-webpack-plugin": "^4.3.0",
     "ts-loader": "^7.0.5",
     "ts-node": "^8.10.2",
     "typescript": "^3.8.3",
