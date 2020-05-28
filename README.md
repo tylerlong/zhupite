@@ -3,6 +3,11 @@
 An unofficial clone of the official RingCentral App.
 
 
+## Download
+
+### [web version](http://chuntaoliu.com/zhupite/)
+
+
 ## Objectives
 
 - To demonstrate usage of RingCentral APIs:
