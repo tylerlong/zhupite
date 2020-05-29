@@ -4,7 +4,7 @@ import webpack from 'webpack';
 import path from 'path';
 
 const config: webpack.Configuration = {
-  mode: 'development',
+  mode: 'production',
   devtool: 'source-map',
   entry: ['./src/index.tsx'],
   output: {
@@ -19,6 +19,11 @@ const config: webpack.Configuration = {
           loader: 'ts-loader',
         },
       },
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'source-map-loader',
+      },
     ],
   },
   plugins: [
@@ -27,6 +32,13 @@ const config: webpack.Configuration = {
         'ZhuPiTe, 朱皮特, an unofficial clone of the official RingCentral App',
     }),
   ],
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js'],
+  },
+  performance: {
+    maxEntrypointSize: 1000000,
+    maxAssetSize: 1000000,
+  },
 };
 
 export default config;
