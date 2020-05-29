@@ -6,14 +6,14 @@ import path from 'path';
 const config: webpack.Configuration = {
   mode: 'development',
   devtool: 'source-map',
-  entry: ['./src/index.ts'],
+  entry: ['./src/index.tsx'],
   output: {
     path: path.resolve(__dirname, 'docs'),
   },
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'ts-loader',
