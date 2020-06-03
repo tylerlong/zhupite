@@ -5,7 +5,7 @@ import {Spin} from 'antd';
 class App extends React.Component<{store: ProxyObj}> {
   render() {
     const store = this.props.store;
-    return <>{store.ready ? <Main store={store} /> : <Spin size="small" />}</>;
+    return <>{store.ready ? <Main store={store} /> : <Spin />}</>;
   }
 }
 

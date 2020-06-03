@@ -20,11 +20,6 @@ const config: webpack.Configuration = {
         },
       },
       {
-        enforce: 'pre',
-        test: /\.js$/,
-        loader: 'source-map-loader',
-      },
-      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
@@ -40,8 +35,8 @@ const config: webpack.Configuration = {
     extensions: ['.ts', '.tsx', '.js'],
   },
   performance: {
-    maxEntrypointSize: 2000000,
-    maxAssetSize: 2000000,
+    maxEntrypointSize: 5000000,
+    maxAssetSize: 5000000,
   },
 };
 
