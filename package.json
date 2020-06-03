@@ -8,17 +8,17 @@
     "build": "webpack --progress --colors"
   },
   "dependencies": {
-    "antd": "^4.2.5",
+    "antd": "^4.3.1",
     "localforage": "^1.7.3",
     "ramda": "^0.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-subx": "^0.6.0",
-    "ringcentral-unified": "^0.5.3",
-    "subx": "^0.9.5"
+    "ringcentral-unified": "^0.5.5",
+    "subx": "^0.9.7"
   },
   "devDependencies": {
-    "@types/node": "^13.11.1",
+    "@types/node": "^14.0.9",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "eslint-plugin-react": "^7.20.0",
@@ -27,7 +27,7 @@
     "source-map-loader": "^1.0.0",
     "ts-loader": "^7.0.5",
     "ts-node": "^8.10.2",
-    "typescript": "^3.8.3",
+    "typescript": "^3.9.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0",
