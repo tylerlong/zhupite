@@ -24,6 +24,10 @@ const config: webpack.Configuration = {
         test: /\.js$/,
         loader: 'source-map-loader',
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [
@@ -36,8 +40,8 @@ const config: webpack.Configuration = {
     extensions: ['.ts', '.tsx', '.js'],
   },
   performance: {
-    maxEntrypointSize: 1000000,
-    maxAssetSize: 1000000,
+    maxEntrypointSize: 2000000,
+    maxAssetSize: 2000000,
   },
 };
 
